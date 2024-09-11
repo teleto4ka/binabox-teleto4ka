@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* Выбрать цвета https://www.w3schools.com/colors/colors_picker.asp */
+
+body {
+  margin: 0;
+  color: #333; /* Основной цвет текст на странице */
+  background: #8080fb; /* Цвет фона страницы */
+  font-family: "Press Start 2P", cursive;
+}
+body p {
+  margin: 0;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+}
+body a {
+  color: #333; /* Цвет текста всех ссылок */
+  text-decoration: none;
+}
+body button {
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  position: relative;
+}
+
+.profile-folder {
+  text-align: center;
+}
+
+.folder {
+  display: inline-block;
+  margin: 32px 0;
+  width: 320px;
+  height: 517.7px;
+  border: solid 2px #111; /* Рамка вокруг карточки */
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fde8ef; /* Цвет фона карточки */
+}
+.folder .title {
+  position: relative;
+  padding: 12px 8px;
+  border-bottom: solid 2px #111;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  background-color: #fec5e9; /* Цвет фона шапки карточки */
+}
+.folder .title span.title-btn {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 8px;
+  transform: translatey(-50%);
+  letter-spacing: -0.6em;
+}
+.folder .title span.title-btn span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  border: 2px solid #333;
+  border-radius: 2px;
+  background-color: #fae6ed; /* Цвет фона кнопок в шапке карточки */
+}
+.folder .title span.title-btn span:before, .folder .title span.title-btn span:after {
+  content: "";
+  border-top: 2px solid #333;
+  background-color: #ddd;
+}
+.folder .title span.title-btn span.btn1:before {
+  position: absolute;
+  top: 11px;
+  left: 4px;
+  width: 10px;
+}
+.folder .title span.title-btn span.btn2:before {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 6px;
+  height: 4px;
+  border: 2px solid #333;
+  border-top: 4px solid #333;
+}
+.folder .title span.title-btn span.btn3:before, .folder .title span.title-btn span.btn3:after {
+  position: absolute;
+  top: 8px;
+  right: 4px;
+  width: 10px;
+}
+.folder .title span.title-btn span.btn3:before {
+  transform: rotate(45deg);
+}
+.folder .title span.title-btn span.btn3:after {
+  transform: rotate(-45deg);
+}
+.folder div.body {
+  padding: 16px 32px;
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  z-index: -30;
+}
+.folder div.body div.profile-icon-box {
+  position: relative;
+  margin: 8px 0 20px;
+  z-index: 0;
+}
+.folder div.body div.profile-icon-box p {
+  margin: 8px 0;
+  height: 14px;
+}
+.folder div.body div.profile-icon-box div.profile-icon {
+  position: relative;
+  display: inline-block;
+  margin: 8px 0 20px;
+  border: solid 2px #111; /* Цвет рамки вокруг картинки */
+}
+.folder div.body div.profile-icon-box div.profile-icon:before, .folder div.body div.profile-icon-box div.profile-icon:after {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  content: "";
+  border: solid 2px #111;
+  background: #fff;
+}
+.folder div.body div.profile-icon-box div.profile-icon:before {
+  top: 7px;
+  right: -13px;
+  z-index: -10;
+}
+.folder div.body div.profile-icon-box div.profile-icon:after {
+  top: 17px;
+  right: -25px;
+  z-index: -20;
+}
+.folder div.body div.profile-icon-box div.profile-icon img {
+  width: 120px;
+}
+.folder div.body div.name {
+  padding: 8px 0;
+  text-align: left;
+}
+.folder div.body div.name a.name-link:hover {
+  text-decoration: underline;
+}
+.folder div.body div.aboutme {
+  padding: 8px 0;
+  text-align: left;
+}
+.folder div.body div.aboutme span {
+  color: #888;
+}
+.folder div.body div.sns-btn-box {
+  padding: 12px 0;
+}
+.folder div.body div.sns-btn-box p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.folder div.body div.sns-btn-box a.sns-btn {
+  display: inline-block;
+  padding: 6px 8px;
+  border: solid 1px #111;
+  border-right: solid 2px #111;
+  border-bottom: solid 2px #111;
+  font-size: 4px; /* Размер шрифта в кнопках с белым текстом  */
+  background: pink; /* Цвет фона кнопки  */
+  color: #fff; /* Цвет текста  */
+}
+.folder div.body div.portfolio-btn-box {
+  padding: 12px 0;
+  text-align: right;
+}
+.folder div.body div.portfolio-btn-box p {
+  text-align: left;
+  margin-bottom: 11px;
+}
+.folder div.body div.portfolio-btn-box .portfolio button.error-btn {
+  display: inline-block;
+  padding: 6px 8px;
+  border: solid 1px #111;
+  border-right: solid 2px #111;
+  border-bottom: solid 2px #111;
+  background: pink; /* Цвет фона кнопки  */
+  color: red;  /* Цвет текста  */
+}
+.folder div.body div.portfolio-btn-box .portfolio a.portfolio-btn {
+  display: inline-block;
+  padding: 6px 8px;
+  border: solid 1px #111;
+  border-right: solid 2px #111;
+  border-bottom: solid 2px #111;
+  background: pink; /* Цвет фона кнопки  */
+  color: #333;  /* Цвет текста  */
+}
+
+ /* ---------------- */
+
+.error {
+  position: absolute;
+  display: inline-block;
+  z-index: 100;
+}
+
+.folder_error {
+  display: inline-block;
+  margin: 0;
+  width: 350px;
+  height: 224px;
+  overflow: hidden;
+  background: #fde8ef;
+}
+.folder_error .title {
+  position: relative;
+  padding: 12px 8px;
+  border-bottom: solid 2px #111;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  background-color: #fec5e9;
+  font-family: "Press Start 2P", cursive;
+}
+.folder_error .title span.title-btn {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 8px;
+  transform: translatey(-50%);
+  letter-spacing: -0.6em;
+}
+.folder_error .title span.title-btn span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  border: 2px solid #333;
+  border-radius: 2px;
+  background-color: #fae6ed;
+}
+.folder_error .title span.title-btn span:before, .folder_error .title span.title-btn span:after {
+  content: "";
+  border-top: 2px solid #333;
+  background-color: #ddd;
+}
+.folder_error .title span.title-btn span.btn1:before {
+  position: absolute;
+  top: 11px;
+  left: 4px;
+  width: 10px;
+}
+.folder_error .title span.title-btn span.btn2:before {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 6px;
+  height: 4px;
+  border: 2px solid #333;
+  border-top: 4px solid #333;
+}
+.folder_error .title span.title-btn span.btn3:before, .folder_error .title span.title-btn span.btn3:after {
+  position: absolute;
+  top: 8px;
+  right: 4px;
+  width: 10px;
+}
+.folder_error .title span.title-btn span.btn3:before {
+  transform: rotate(45deg);
+}
+.folder_error .title span.title-btn span.btn3:after {
+  transform: rotate(-45deg);
+}
+.folder_error div.body {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 32px;
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  z-index: -30;
+}
+.folder_error div.body div.profile-icon-box {
+  position: relative;
+  margin: 0;
+  z-index: 0;
+}
+.folder_error div.body div.profile-icon-box p {
+  margin: 8px 0;
+  height: 14px;
+}
+.folder_error div.body div.profile-icon-box div.profile-icon {
+  position: relative;
+  display: inline-block;
+  margin: 8px 23px 20px 0;
+  border: solid 2px #111;
+}
+.folder_error div.body div.profile-icon-box div.profile-icon:before, .folder_error div.body div.profile-icon-box div.profile-icon:after {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  content: "";
+  border: solid 2px #111;
+  background: #fff;
+}
+.folder_error div.body div.profile-icon-box div.profile-icon:before {
+  top: 7px;
+  right: -13px;
+  z-index: -10;
+}
+.folder_error div.body div.profile-icon-box div.profile-icon:after {
+  top: 17px;
+  right: -25px;
+  z-index: -20;
+}
+.folder_error div.body div.profile-icon-box div.profile-icon img {
+  width: 120px;
+}
+.folder_error div.body div.name {
+  padding: 40px 0;
+  text-align: right;
+}
+.folder_error div.body div.name button.ok-error-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 8px;
+  border: solid 1px #111;
+  border-right: solid 2px #111;
+  border-bottom: solid 2px #111;
+  background: pink;
+  color: white;
+}

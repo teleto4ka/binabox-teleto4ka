@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="stylesheet" href="style.css"> --> <!-- uncomment styles --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="profile-folder">
+          <div class="folder">
+            <div class="title">
+              Yaba Kawaii Studio
+              <span class="title-btn">
+                <span class="btn1"></span>
+                <span class="btn2"></span>
+                <span class="btn3"></span>
+              </span>
+            </div>
+
+            <div class="body">
+              <div class="profile-icon-box">
+                <p id="typeText"></p>
+                <div class="profile-icon">
+                    <img src="https://assets.codepen.io/4292193/ayakoyokoya_icon.png" /> <!-- Photo -->
+                </div>
+              </div>
+
+              <div class="name">
+                <p>AYAKO YOKOYA</p> <!-- Name -->
+              </div>
+              <div class="aboutme">
+                <p>Creative Developer <span>(I wanna be...)</span></p> <!-- Profession -->
+              </div>
+
+              <div class="sns-btn-box">
+                <p>My sns accounts are...</p>
+                <a
+                  href="https://github.com/ayakoyokoya/"
+                  target="_blank"
+                  class="sns-btn"
+                >
+                  github <!-- Link to social media 1 -->
+                </a>
+                <a
+                  href="https://twitter.com/ayakoyokoya"
+                  target="_blank"
+                  class="sns-btn"
+                >
+                  twitter <!-- Link to social media 2 -->
+                </a>
+              </div>
+
+              <div class="portfolio-btn-box">
+                <p>
+                  Do you want to see error? <!-- Any text -->
+                </p>
+                <div class="portfolio">
+                  <button id="error-btn" class="error-btn">
+                    error?
+                  </button>
+                  <a
+                    href="https://ayakoyokoya.github.io/yaba-kawaii-audio-visualizer/dist/"
+                    target="_blank"
+                    class="portfolio-btn"
+                  >
+                    yes! 
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <template id="template">
+        <div class="error">
+          <div class="folder folder_error">
+            <div class="title">
+              Error
+              <span class="title-btn">
+                <span class="btn1"></span>
+                <span class="btn2"></span>
+                <span class="btn3"></span>
+              </span>
+            </div>
+
+            <div class="body">
+              <div class="profile-icon-box">
+                <div class="profile-icon">
+                    <img src="https://assets.codepen.io/4292193/ayakoyokoya_icon2.png" />
+                </div>
+              </div>
+
+              <div class="name">
+                <p>error!!!!</p>
+                <p>error!!!!</p>
+                <p>error!!!!</p>
+                <p>error!!!!</p>
+                <p>error!!!!</p>
+                <button class="ok-error-btn" onclick="window.location.reload();">OK...</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+      <!-- <script src="script.js"></script> --> <!-- uncomment script --> 
+</body>
+</html>
